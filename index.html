@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My BCIT Project</title>
+    <title>Mr. Burger - No Burgers Here</title>
     <meta name="comp1800 template" content="my bcit Hiking App project">
 
     <!-- Optional styles and scripts of your own -->
@@ -27,7 +27,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     
     <!-- Link to the api keys for your Firebase project -->
-    
+    <script src="scripts/firebaseAPI.js"></script>
 
 </head>
 
@@ -36,10 +36,39 @@
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
+
+    <!--The Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" >Mr. Burger's Take-Out App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Navigate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Saved</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="container">
-        <h1>Index.html file</h1>
+        <h1>Ready to order?</h1>
         <h2>Let's Log in </h2>
-        <a href="#" class="btn btn-info" role="button">Log in</a>
+        <a href="login.html" class="btn btn-info" role="button">Log in</a>
     </div>
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
